@@ -101,7 +101,7 @@ class ListVC: UIViewController {
         } catch ListErrors.allDataLoaded {
             tableView.finishInfiniteScroll()
         } catch {
-            showError(error)
+            showError(error)//TODO: add extension for errors, so they will have nice user faced text
         }
     }
 }
